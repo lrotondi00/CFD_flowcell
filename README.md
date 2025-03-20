@@ -1,1 +1,1 @@
-# CFD_flowcell
+This repository contains electronic supporting information for the paper **Establishing The Link Between Flow Uniformity and Overpotential in Electrocatalytic Flow Cell** submitted by L. Rotondi, A. Di Mascio and L. D'Amario. 
