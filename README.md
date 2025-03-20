@@ -19,18 +19,18 @@ Input files are stored in the directories *system*, *constant* and *orig*.
 
 - *system* contains files specifying setting parameters related to the solution procedure, such as time step, start/end time, equation solvers, tolerances and discretisation schemes
 
-- *constant* contains files specifying physical properties for the computed simulation, such as dynamic viscosity of the fluid and Darcy and Forchheimer coefficients, and files descripting case mesh, stored in subfolders *polyMesh* and *triSurface*
+- *constant* contains files specifying physical properties for the computed simulation, such as dynamic viscosity of the fluid and Darcy and Forchheimer coefficients of the porous media, and files descripting case mesh, stored in subfolders *polyMesh* and *triSurface*
 
 - *orig* contains *p* and *U* files, specifying pressures and velocity fields. Inlet velocity is expressed in terms of inlet flow rate 
 
 
 ### Output files
 
-Output files are stored in the time directories (0, 0.1, 0.2... etc.), *logs*.
+Output files are stored in the time directories (0, 0.1, 0.2... etc.) and *logs*.
 
-- time directories contain *p*, *U* and *phi* files, specifying pressure, velocity and flux field for every time step. Directories from *0.1* to *2* also contain *uniform* subfolder which specifies time step. This subfolder is absent in *0* since the fields stored here are related to the firt approximation solution as potential flow, not characterized by any time steps
+- time directories contain *p*, *U* and *phi* files, specifying pressure, velocity and flux field for every time step. Directories from *0.1* to *2* also contain *uniform* subfolder which specifies time step. This subfolder is absent in *0* since the fields stored here are related to the first approximated solution as potential flow, not characterized by any time steps
 
-- *logs* contains several files specifying number of iterations, initial and final residual for every solved variable. This datas are extracted from the .out file exploiting "foamLog". This .out file stores the computed variables for every iteration of every time steps
+- *logs* contains several files specifying number of iterations, initial and final residual for every solved variable. This datas are extracted from the cellname.out file exploiting "foamLog". This cellname.out file stores the computed variables for every iteration of every time steps
 
 
 Other relevant files are: 
