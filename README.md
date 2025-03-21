@@ -41,6 +41,10 @@ Other relevant files are:
 
 - *XY_Uz_cellname.csv* contains dataset used to 3D plot velocities for Fig S20, S21 and S22. *Points_0*, *Points_1* and *Points_2* columns store flow cell geometrical coordinates associated with related velocities stored in columns *U_0*, *U_1* and *U_2*. 0, 1 and 2 correspond to x, y and z axis respectively. This file is present only in *short*, *medium* and *long* folders
 
+- *medium_video.avi* shows the normal velocity simulation in the same sampling plane of the VUC, as represented in Figure 4 in the main paper
+
+- *medium_video_sample.avi* resembles *medium_video.avi* showing also the part of the flow cell cross section not included in the VUC sampling to limit boundary layer effects. The VUC sampling radius is highlighted by a cylinder
+
 
 
 
